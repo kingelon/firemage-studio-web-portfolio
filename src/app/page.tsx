@@ -1,33 +1,41 @@
-import { PROJECTS } from "@/data/portfolio";
-import { ProjectCard } from "@/components/ProjectCard";
+import Link from "next/link";
+import { SITE } from "@/lib/site";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen max-w-5xl mx-auto p-8 sm:p-20">
-      {/* Header Section */}
-      <section className="mb-16">
-        <h1 className="text-5xl font-bold tracking-tight mb-4">
-          Vamsi <span className="text-zinc-500">/ Data Engineer</span>
+    <section className="space-y-12">
+      <div className="space-y-4 max-w-3xl">
+        <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+          {SITE.name}
         </h1>
-        <p className="text-xl text-zinc-400 max-w-2xl">
-          Building high-performance data pipelines and intelligent systems.
-          Focused on scalable architecture and evolving AI capabilities.
+        <p className="text-xl text-neutral-600 font-light">{SITE.tagline}</p>
+        <p className="max-w-2xl text-lg text-neutral-600 leading-relaxed">
+          {SITE.description}
         </p>
-      </section>
+      </div>
 
-      {/* Projects Grid */}
-      <section>
-        <h2 className="text-2xl font-semibold mb-8 flex items-center gap-2">
-          <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-          Active Projects
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {PROJECTS.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </section>
-    </main>
+      <div className="flex flex-wrap gap-4">
+        <Link
+          href="/services"
+          className="rounded-lg bg-neutral-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors"
+        >
+          View services
+        </Link>
+        <Link
+          href="/work"
+          className="rounded-lg border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50 transition-colors"
+        >
+          See work
+        </Link>
+      </div>
+
+      <div className="rounded-xl border border-neutral-200 p-6 bg-neutral-50/50">
+        <h2 className="text-base font-semibold">Current Focus</h2>
+        <p className="mt-2 text-neutral-600">
+          Building a clean stage for my work + a private delivery system for
+          client-ready AI workflows. This is v0 -- the curve bends up from here.
+        </p>
+      </div>
+    </section>
   );
 }
