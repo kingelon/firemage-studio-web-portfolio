@@ -44,6 +44,13 @@ Deploy an initial portfolio site to production on Vercel, connected to my domain
 * Repo has a README with: deploy steps, env vars, and local dev commands
 * Optional: Supabase client wired + simple health check route or build-time check (no sensitive keys leaked)
 
+## Current routes
+
+* / (Home)
+* /work
+* /services
+* /contact
+
 ## Non-goals (for now)
 
 * No full SaaS, no billing system, no complex auth

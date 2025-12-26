@@ -10,6 +10,9 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: SITE.name,
   description: SITE.description,
+  icons: {
+    icon: "/gripfire-brands-solid-full.svg",
+  },
 };
 
 export default function RootLayout({
