@@ -8,33 +8,47 @@ export default function HomePage() {
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
           {SITE.name}
         </h1>
-        <p className="text-xl text-neutral-600 font-light">{SITE.tagline}</p>
+        <p className="text-xl text-neutral-700">
+          I build clean, reliable digital systems — from v0 deployments to
+          repeatable AI workflows.
+        </p>
         <p className="max-w-2xl text-lg text-neutral-600 leading-relaxed">
-          {SITE.description}
+          For founders, small teams, and builders who want a real working
+          artifact (not just a slide deck).
         </p>
       </div>
+
+      <ul className="grid gap-3 max-w-3xl sm:grid-cols-3">
+        <li className="border border-neutral-200 bg-white px-4 py-3 text-sm font-medium text-neutral-900">
+          Launch Sprint (Ship v0)
+        </li>
+        <li className="border border-neutral-200 bg-white px-4 py-3 text-sm font-medium text-neutral-900">
+          Systems Tune-Up (Fix fragility)
+        </li>
+        <li className="border border-neutral-200 bg-white px-4 py-3 text-sm font-medium text-neutral-900">
+          RAG-lite Knowledge Base (Docs → Answers)
+        </li>
+      </ul>
 
       <div className="flex flex-wrap gap-4">
         <Link
           href="/services"
-          className="rounded-lg bg-neutral-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors"
+          className="rounded-none bg-neutral-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors"
         >
-          View services
+          View Services
         </Link>
         <Link
           href="/work"
-          className="rounded-lg border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50 transition-colors"
+          className="rounded-none border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50 transition-colors"
         >
-          See work
+          See Work
         </Link>
-      </div>
-
-      <div className="rounded-xl border border-neutral-200 p-6 bg-neutral-50/50">
-        <h2 className="text-base font-semibold">Current Focus</h2>
-        <p className="mt-2 text-neutral-600">
-          Building a clean stage for my work + a private delivery system for
-          client-ready AI workflows. This is v0 -- the curve bends up from here.
-        </p>
+        <Link
+          href="/contact"
+          className="rounded-none border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50 transition-colors"
+        >
+          Contact
+        </Link>
       </div>
     </section>
   );

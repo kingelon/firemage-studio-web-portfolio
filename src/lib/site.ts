@@ -2,9 +2,14 @@ export type NavItem = { label: string; href: string };
 
 export const SITE = {
   name: "Firemage Studio",
-  tagline: "Local-first AI workflows - Systems - Prototypes",
+  tagline: "Local-first AI workflows • Systems • Prototypes",
   description:
     "Firemage Studio is a builder-led lab for practical AI workflows and clean, scalable systems.",
+  url: "https://firemage.studio",
+  email: "hello@firemage.studio",
+  social: {
+    twitter: "https://x.com/FiremageStudio",
+  },
   nav: [
     { label: "Home", href: "/" },
     { label: "Work", href: "/work" },
