@@ -17,7 +17,9 @@ export default function NavBar() {
 
         <nav className="flex items-center gap-2 text-sm">
           {SITE.nav.map((item) => {
-            const active = pathname === item.href;
+            const active =
+              pathname === item.href ||
+              (item.href !== "/" && pathname.startsWith(`${item.href}/`));
             return (
               <Link
                 key={item.href}
