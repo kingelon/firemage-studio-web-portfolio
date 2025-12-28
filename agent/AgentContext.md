@@ -66,3 +66,14 @@ Deploy an initial portfolio site to production on Vercel, connected to my domain
 ## Working style
 
 Create small PR-sized changes. Each ticket should end with a clear validation step.
+
+## Agent State Strategy (source of truth)
+
+Primary truth sources:
+* `agent/AgentContext.md` for long-lived product context and constraints.
+* `agent/SessionLog.md` for running, append-only notes across sessions/tickets.
+
+Operating rules:
+* After each ticket or meaningful change, append a short entry to `agent/SessionLog.md`.
+* Keep entries compact: goals touched, files changed, decisions, and follow-ups.
+* Avoid duplicating long content; link to file paths and keep references tight.
