@@ -23,7 +23,7 @@ export default function NavBar() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "rounded-md px-3 py-2 transition-colors",
+                  "rounded-none px-3 py-2 transition-colors",
                   active
                     ? "bg-neutral-100 font-medium text-neutral-900"
                     : "text-neutral-500 hover:text-neutral-900 hover:bg-neutral-50"
