@@ -12,26 +12,45 @@ export default function HomePage() {
           I engineer the data foundations for production AI.
           <span className="mt-2 block text-lg text-neutral-500">
             Moving enterprises from &quot;fragile demos&quot; to
-            &quot;governed, reliable systems.&quot;
+            &quot;governed, reliable systems.&quot; I bridge the gap between
+            experimental AI models and strict engineering standards.
           </span>
         </p>
         <p className="max-w-2xl text-lg text-neutral-600 leading-relaxed">
-          For founders, small teams, and builders who want a real working
-          artifact (not just a slide deck).
+          For technical founders and engineering teams who need to move AI from
+          experimental notebooks to governed production systems.
         </p>
       </div>
 
-      <ul className="grid gap-3 max-w-3xl sm:grid-cols-3">
-        <li className="border border-neutral-200 bg-white px-4 py-3 text-sm font-medium text-neutral-900">
-          Launch Sprint (Ship v0)
-        </li>
-        <li className="border border-neutral-200 bg-white px-4 py-3 text-sm font-medium text-neutral-900">
-          Systems Tune-Up (Fix fragility)
-        </li>
-        <li className="border border-neutral-200 bg-white px-4 py-3 text-sm font-medium text-neutral-900">
-          RAG-lite Knowledge Base (Docs → Answers)
-        </li>
-      </ul>
+      <div className="grid gap-6 md:grid-cols-3">
+        <div className="space-y-3">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-900">
+            Data First
+          </h2>
+          <p className="text-sm text-neutral-600">
+            Models are commodities. Your data structure, access patterns, and
+            governance are the real moat.
+          </p>
+        </div>
+        <div className="space-y-3">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-900">
+            Local &amp; Private
+          </h2>
+          <p className="text-sm text-neutral-600">
+            Architecture that respects privacy by design. Local-first workflows
+            and private RAG pipelines.
+          </p>
+        </div>
+        <div className="space-y-3">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-900">
+            Strict Evals
+          </h2>
+          <p className="text-sm text-neutral-600">
+            If you can&apos;t measure it, don&apos;t ship it. Every agent
+            includes automated regression testing.
+          </p>
+        </div>
+      </div>
 
       <div className="flex flex-wrap gap-4">
         <Link
@@ -47,10 +66,10 @@ export default function HomePage() {
           See Work
         </Link>
         <Link
-          href="/contact"
+          href="/book"
           className="rounded-none border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50 transition-colors"
         >
-          Contact
+          Book Consult
         </Link>
       </div>
     </section>

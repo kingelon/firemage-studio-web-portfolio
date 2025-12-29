@@ -17,7 +17,7 @@ export default function ServicesPage() {
         <div className="flex flex-col border border-neutral-200 bg-white p-6 transition-colors hover:border-neutral-400">
           <div className="mb-4 space-y-2">
             <h2 className="text-lg font-mono font-semibold">
-              Data Readiness Sprint
+              Infrastructure Bootstrap
             </h2>
             <p className="text-sm text-neutral-500">
               For teams who want AI but fear the data mess.
