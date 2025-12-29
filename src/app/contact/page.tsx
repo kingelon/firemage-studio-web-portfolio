@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SITE } from "@/lib/site";
 
 export default function ContactPage() {
@@ -14,12 +15,21 @@ export default function ContactPage() {
       </div>
 
       <div className="border border-neutral-200 bg-white p-6">
-        <a
-          href={`mailto:${SITE.email}?subject=Project%20Inquiry`}
+        <Link
+          href="/book"
           className="inline-flex border border-neutral-200 bg-neutral-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-neutral-800"
         >
-          Start Intake
-        </a>
+          Book a Call
+        </Link>
+        <div className="mt-3 text-sm text-neutral-500">
+          Or email{" "}
+          <a
+            href={`mailto:${SITE.email}?subject=Project%20Inquiry`}
+            className="underline underline-offset-4 hover:text-neutral-700"
+          >
+            {SITE.email}
+          </a>
+        </div>
         {SITE.social?.twitter ? (
           <div className="mt-4 text-sm text-neutral-500">
             <a

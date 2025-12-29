@@ -14,6 +14,7 @@ export const SITE = {
     { label: "Home", href: "/" },
     { label: "Work", href: "/work" },
     { label: "Services", href: "/services" },
+    { label: "Book", href: "/book" },
     { label: "Contact", href: "/contact" },
   ] satisfies NavItem[],
 } as const;
