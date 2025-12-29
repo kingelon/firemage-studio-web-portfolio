@@ -6,7 +6,7 @@ export const SITE = {
   description:
     "Firemage Studio is a builder-led lab for practical AI workflows and clean, scalable systems.",
   url: "https://firemagestudio.com",
-  email: "hello@firemage.studio",
+  email: "hello@firemagestudio.com",
   social: {
     twitter: "https://x.com/FiremageStudio",
   },
