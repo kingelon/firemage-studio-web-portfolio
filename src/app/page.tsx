@@ -9,8 +9,11 @@ export default function HomePage() {
           {SITE.name}
         </h1>
         <p className="text-xl text-neutral-700">
-          I build clean, reliable digital systems — from v0 deployments to
-          repeatable AI workflows.
+          I engineer the data foundations for production AI.
+          <span className="mt-2 block text-lg text-neutral-500">
+            Moving enterprises from &quot;fragile demos&quot; to
+            &quot;governed, reliable systems.&quot;
+          </span>
         </p>
         <p className="max-w-2xl text-lg text-neutral-600 leading-relaxed">
           For founders, small teams, and builders who want a real working
